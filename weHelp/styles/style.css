@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "my font";
+  src: url(/font/微軟正黑體-1.ttf);
+  /* 可以到網站搜尋想要的免費字體，並下載到資料夾 */
+  /* 用@font-face設定，再把 "my font" 加進font-family的第一順位*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "my font", DFkai-sb, sans-serif;
+  /*DFkai-sb標楷體，電腦若沒有標楷體，會顯示sans-serif字體  */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+body img.img-fix {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  bottom: 0;
+  left: 0;
+}
+body nav {
+  background-color: #d3ceac;
+  text-align: center;
+  padding: 1rem;
+}
+body nav h2 {
+  color: chocolate;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+body main section.section-one {
+  display: block;
+  flex-wrap: wrap;
+  width: 700px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+body main section.section-one div.question {
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background-color: aqua;
+}
+body main section.section-one div.question h2 {
+  text-align: center;
+  font-size: 22px;
+}
+body main section.section-one div.answer {
+  display: flex;
+  flex: 2 1 400px;
+  align-items: center;
+}
+body main section.section-one div.answer p {
+  padding: 1rem;
+  font-size: 18px;
+  line-height: 1.7rem;
+}
+body main section.section-one div.answer img {
+  flex-basis: 100px;
+  width: 20vh;
+  border-radius: 90%;
+  margin-top: 1rem;
+  right: 10px;
+}
+body footer div.about-me {
+  background-color: #ece3d5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+body footer div.about-me #button {
+  margin-left: 1rem;
+  background-color: chocolate;
+  width: 25vh;
+  border-radius: 10%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+body footer div.about-me #button p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+body footer div.about-me #button:hover {
+  border: 3px solid aqua;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
