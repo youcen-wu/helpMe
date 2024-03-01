@@ -25,9 +25,6 @@ h6 {
 }
 
 body {
-  position: relative;
-  // fixed-image相對於body的位置
-
   img.img-fix {
     min-height: 100vh;
     position: fixed;
@@ -118,4 +115,3 @@ body {
   }
 }
 
-// RWD設定
