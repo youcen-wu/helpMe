@@ -2,7 +2,6 @@
 @font-face {
   font-family: "my font";
   src: url(/font/微軟正黑體-1.ttf);
-  /* 可以到網站搜尋想要的免費字體，並下載到資料夾 */
   /* 用@font-face設定，再把 "my font" 加進font-family的第一順位*/
 }
 * {
@@ -22,9 +21,6 @@ h6 {
   font-weight: normal;
 }
 
-body {
-  position: relative;
-}
 body img.img-fix {
   min-height: 100vh;
   position: fixed;
@@ -37,6 +33,10 @@ body nav {
   background-color: #d3ceac;
   text-align: center;
   padding: 1rem;
+  width: 700px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 body nav h2 {
   color: chocolate;
@@ -101,4 +101,28 @@ body footer div.about-me #button p {
 body footer div.about-me #button:hover {
   border: 3px solid aqua;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  body header .img-fix {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  body header nav {
+    width: 380px;
+  }
+  body main section.section-one {
+    width: 360px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  body main section.section-one div.question {
+    font-size: 0.8rem;
+  }
+  body main section.section-one div.question div.answer {
+    font-size: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
